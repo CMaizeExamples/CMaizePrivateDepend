@@ -3,7 +3,7 @@ project(CMaize_Private_Depend)
 
 include("${PROJECT_SOURCE_DIR}/cmake/get_cpp.cmake")
 
-set(CPP_GITHUB_TOKEN 9e12df7e04b088663e499e278197ec7781a7c0d2)
+set(CPP_GITHUB_TOKEN b1d5f336d37a9bd61b28ebf7e754a1654ab864b4)
 
 cpp_find_or_build_dependency(
     CMakePrivate
