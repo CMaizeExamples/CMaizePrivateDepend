@@ -21,6 +21,6 @@ cpp_add_library(
     DEPENDS CMakePrivate
 )
 
-#target_include_directories (CMaizePrivateDepend PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories (CMaizePrivateDepend PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 message("Processing private depend...")
