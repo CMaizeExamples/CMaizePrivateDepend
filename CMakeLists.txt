@@ -13,6 +13,7 @@ include(get_cmaize)
 cpp_find_or_build_dependency(
     CMakePrivate
     URL github.com/CMaizeExamples/CMakePrivate
+    PRIVATE TRUE
     BUILD_TARGET CMakePrivate
     FIND_TARGET CMakePrivate::CMakePrivate
     CMAKE_ARGS BUILD_TESTING=FALSE
