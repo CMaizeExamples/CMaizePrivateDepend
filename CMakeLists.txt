@@ -10,9 +10,9 @@ set(
 include(get_cmaize)
 
 # Get dependencies
-cpp_find_or_build_dependency(
+cmaize_find_or_build_dependency(
     CMakePrivate
-    URL github.com/CMaizeExamples/CMakePrivate
+    URL https://github.com/CMaizeExamples/CMakePrivate.git
     PRIVATE TRUE
     BUILD_TARGET CMakePrivate
     FIND_TARGET CMakePrivate::CMakePrivate
@@ -24,7 +24,7 @@ cmaize_add_library(
     ${PROJECT_NAME}
     INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/include/cmaize_private_depend"
     SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/src/cmaize_private_depend"
-    DEPENDS CMakePrivate::CMakePrivate
+    DEPENDS CMakePrivate
 )
 
 if (BUILD_TESTING)
