@@ -30,7 +30,7 @@ jobs:
         -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
         -DCMAKE_CXX_STANDARD=17
         -DBUILD_TESTING=TRUE
-        -DCMAIZE_GITHUB_TOKEN=${{ secrets.CMAKEPRIVATE_TOKEN }}
+        -DCMAIZE_GITHUB_TOKEN=${{secrets.CMAKEPRIVATE_TOKEN}}
 
     - name: Build
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
