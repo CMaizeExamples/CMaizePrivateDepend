@@ -9,6 +9,8 @@ set(
 
 include(get_cmaize)
 
+string(LENGTH "${CMAIZE_GITHUB_TOKEN}" _cgt_length)
+
 # Get dependencies
 cmaize_find_or_build_dependency(
     CMakePrivate
