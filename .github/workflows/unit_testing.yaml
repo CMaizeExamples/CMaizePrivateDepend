@@ -23,10 +23,6 @@ jobs:
       with:
         cmakeVersion: latestrc
 
-    - name: Check Secret
-      run: >
-        echo ${{secrets.CMAKEPRIVATE_TOKEN}}
-
     - name: Configure CMake
       run: > 
         cmake
