@@ -1,6 +1,6 @@
 #pragma once
 
-#include <cmakeprivate/cmake_private.hpp>
+#include <cmake_private/cmake_private.hpp>
 
 namespace cmaize_private_depend {
 
